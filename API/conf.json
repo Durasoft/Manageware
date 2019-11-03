@@ -1,0 +1,20 @@
+{
+    "_comment": [
+        "D U R A S O F T ",
+        "s o f t w a r e",
+        "->Conf.JSON",
+        "Handles all variables,",
+        "create object 'variables' and store all variables inside there. ",
+        "Rest is not important, use any key names you want. Don't create",
+        "arrays or objects.",
+        "Use variable names inside string as %variable_name%"
+    ],
+    "variables": {
+        "bayi_adi": "Bay\u0131r Entegre S\u00fct \u00dcr\u00fcnleri",
+        "telefon": "+90 (012) 345 67 89",
+        "email": "iletisim@bayirsut.com"
+    },
+    "title": "E-Bayi - %bayi_adi%",
+    "ver": "1.0.0a",
+    "welcoming_txt": "\ud83d\udc4b Merhaba %bayi_adi%!"
+}

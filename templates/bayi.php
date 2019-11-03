@@ -1,0 +1,1 @@
+<h1 style="text-align: center; font-size: 6em;">Bayi Sayfası</h1>

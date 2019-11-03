@@ -1,0 +1,29 @@
+<div class="shadow">
+	<div class="margin-box">
+		<div class="row">
+			<h3><small>Bayi:</small><span data-content-text="bayi_adi"></span></h3>
+			<p>Hesap oluşum tarihi: <b><span data-content-text="creation_date"></span></b></p>
+			<div class="inline-dynamic" style="text-align: center;">
+				<img id="new_img" height="120px" data-src="img_src">
+			</div>
+			<div class="inline-dynamic">
+				<input type="text" data-value="bayi_adi" disabled>
+				<br>
+				<input type="email" data-value="email" disabled>
+				<br>
+				<input type="text" data-value="telephone" disabled>
+				<br>
+			</div>
+			<div class="inline-dynamic">
+				<textarea disabled data-content-text="address" style="height: 120px;"></textarea>
+			</div>
+		</div>
+
+		<div class="row">
+			<button data-value="userID" onclick="delete_warn(this.value);">Kullanıcıyı Sil</button>
+			<button onclick="console.log('deleting user');">Düzenleme Kilidini Aç</button>
+			<button onclick="console.log('deleting user');">Şifresini Sıfırla</button>
+			<button onclick="console.log('deleting user');">Hesabını Dondur</button>									
+		</div>
+	</div>
+</div>

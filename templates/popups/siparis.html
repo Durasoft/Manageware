@@ -1,0 +1,62 @@
+<div class="shadow" style="width: 50%;">
+	<div class="margin-box">
+		<div class="row text-center">
+			<h3>Sipariş Detayları</h3>
+		</div>
+
+
+		<div class="inline-dynamic" style="width: 58%; padding-right: 2%;">
+			<h4 class="text-center">Sipariş İçerikleri</h4>
+			<div class="row">
+
+				<script type="text/html" id="tableContent">
+				      <tr>
+				        <td data-content="urun"></td>
+				        <td data-content="adet"></td>
+				        <td data-content="tutar"></td>
+				    </tr>
+				</script>
+
+				<table id="users" style="background: white; max-height: 80%;">
+				<thead>
+				  <tr>
+				  	<th>Ürün</th>
+				    <th>Adet</th>
+				    <th>Tutar</th>
+				  </tr>
+				</thead>
+				  <tbody id="SiparisPanelUrunTable">
+
+				  </tbody>
+				</table>				
+			</div>
+			<div class="row text-center">
+				<select id="fetchOrdersBySelect" data-value="status" onchange="refreshOrders($('#sortOrdersBySelect').val())">
+					<option value="4">Durum: Cevapsız</option>
+					<option value="3">Durum: Sipariş Hazırlanıyor</option>
+					<option value="2">Durum: Kurye ile Gönderildi</option>
+					<option value="1">Durum: Tamamlandı</option>
+				</select>
+				<button data-value="userID" onclick="delete_warn(this.value);">Sipariş Durumunu Güncelle</button>
+			</div>
+			<div class="row text-center">
+				<button onclick="console.log('deleting user');">a</button>
+				<button onclick="console.log('deleting user');">Şifresini Sıfırla</button>
+				<button onclick="console.log('deleting user');">Hesabını Dondur</button>									
+			</div>
+		</div><div class="inline-dynamic" style="width: 38%; margin-left: 2%;">
+			<h4 class="text-center">Gönderi Bilgileri</h4>
+
+			<div class="row">
+				<div class="text-center">
+					<img id="new_img" height="120px" data-src="img_src">
+				</div>
+				<div>Bayi Adı: <span data-content-text="bayi_adi"></span></div>
+				<div>İletişim Adresi: <span data-content-text="telephone"></span></div>
+				<div>E-Posta: <span data-content-text="email"></span></div>
+				<div>Fatura Adresi: <span data-content-text="address"></span></div>
+				<div>Gönderi Adresi: <span data-content-text="address"></span></div>
+			</div>
+		</div>
+	</div>
+</div>

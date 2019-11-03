@@ -1,0 +1,16 @@
+<div id="reLogin">
+	<div class="shadow" style="position: fixed; min-width: 350px; height: 225px; left: calc(calc(100% - 350px) / 2); top: calc(calc(100% - 225px) / 2); background: white; border-radius: 2px; text-align: center;">
+
+		<h3>Oturumunuz sonlandırıldı<br><small>devam etmek için lütfen giriş yapınız</h3>
+
+		<div class="login-form">
+			<input id="bayi_num" type="text" onkeydown="if (this.style.background != 'white') this.style.background = 'white'; $('#login-err').text('&nbsp');" name="id" placeholder="Bayi Numarası" required>
+			<br>
+			<input id="bayi_pass" type="password" onkeydown="if (this.style.background != 'white') this.style.background = 'white'; $('#login-err').text('&nbsp');" name="password" placeholder="************" required>
+			<br>
+			<input type="submit" onclick="bayi_login($('#bayi_num'), $('#bayi_pass'))" value="Giriş Yap">
+			<br>
+			<span id="login-err">&nbsp;</span>
+		</div>
+	</div>
+</div>
